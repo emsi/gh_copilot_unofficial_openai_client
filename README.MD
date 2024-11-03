@@ -17,8 +17,11 @@ https://github.com/VSCodium/vscodium/discussions/1487
 ```
 >>> from gh_copilot_unofficial_api import openai
 ... client = openai.CopilotOpenAI().client("gho_...")
-...
-... models = client.models.list()
+
+>>> type(client)
+<class 'openai.OpenAI'>
+
+>>> models = client.models.list()
 ...
 ... for m in models.to_dict()["data"]: print(m["id"])
 ...
