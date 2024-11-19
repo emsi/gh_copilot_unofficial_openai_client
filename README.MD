@@ -15,8 +15,8 @@ https://github.com/VSCodium/vscodium/discussions/1487
 ## Example
 
 ```
->>> from gh_copilot_unofficial_api import openai
-... client = openai.CopilotOpenAI().client("gho_...")
+>>> from gh_copilot_unofficial_openai_client import CopilotOpenAI
+... client = CopilotOpenAI().client("gho_...")
 
 >>> type(client)
 <class 'openai.OpenAI'>
